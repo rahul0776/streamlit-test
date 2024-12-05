@@ -4,10 +4,10 @@ import numpy as np
 import pandas as pd
 
 # Load the model
-with open('model2.pkl', 'rb') as file:
+with open('./app/model2.pkl', 'rb') as file:
     model = pickle.load(file)
 
-with open('label_encoder.pkl', 'rb') as file:
+with open('./app/label_encoder.pkl', 'rb') as file:
     loaded_label_encoder = pickle.load(file)
 
 # Use the loaded LabelEncoder
